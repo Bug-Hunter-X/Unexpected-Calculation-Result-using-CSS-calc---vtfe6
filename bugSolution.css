@@ -1,0 +1,14 @@
+The issue was caused by a missing unit in the calculation. The corrected code includes 'px' units in the calculation to ensure the values are treated as pixels.
+
+```css
+/* Incorrect CSS */
+#myElement {
+  width: calc(100vw - 20);
+}
+
+/* Correct CSS */
+#myElement {
+  width: calc(100vw - 20px);
+}
+```
+Adding the unit resolves the calculation problem, resulting in the expected width for the element.
